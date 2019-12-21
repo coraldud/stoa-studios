@@ -176,11 +176,11 @@
 
             {% if product.available %}
               <button id="AddToCart-{{ section.id }}" type="submit" name="add" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}">
-                <span class="btn__text">{{ 'Pre-order' | t }}</span>
+                <span class="btn__text">{{ 'products.product.add_to_cart' | t }}</span>
               </button>
             {% else %}
               <button type="button" class="btn btn--add-to-cart btn--disabled{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}" disabled="disabled">
-                {{ 'products.product.sold_out' | t }}
+                {{ 'Pre-order' | t }}
               </button>
             {% endif %}
             {% if section.settings.enable_payment_button %}
